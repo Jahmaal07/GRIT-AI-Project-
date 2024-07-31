@@ -134,63 +134,6 @@ def page2():
     
 # AI Chat Bot
 def page3():
- import http
- from imaplib import _Authenticator
- from xml import dom
- import dotenv
- from pathlib import Path
- import streamlit_authenticator as stauth
- from dotenv import load_dotenv
- import os
- import streamlit as st
- import google.generativeai as genai
- import numpy as np
- import pandas as pd
- import random 
-
-
- #------PAGE--------
-
- 
- 
- 
-
-
- #--------SECRETS--------------
-
- import streamlit as st
- import streamlit_authenticator as stauth
- import yaml
- from yaml.loader import SafeLoader
- import os
-
- # Define your config here
- 
-
- #----------------CHATBOT----------------
-
- env_path = r"/Users/ed_chat_bot/chatbot_project/.env"
-
- load_dotenv(env_path)
- API_KEY = os.getenv('API_KEY')
- print (API_KEY)
-
- genai.configure(api_key=API_KEY)
- model = genai.GenerativeModel('gemini-pro')
- def generate_content(prompt):
-        response = model.generate_content(prompt)
-        return response.text
-
- st.title('Gemini AI Text Generator')
- prompt = st.text_input('Enter a prompt:')
- if st.button('Generate'):
-        response = generate_content(prompt)
-        st.write (response)
-  
-
-
-
-
 
 # The name of the pages ( What the name will be on the app)
 page_names_to_funcs = {
