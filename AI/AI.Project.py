@@ -134,6 +134,7 @@ def page2():
     
 # AI Chat Bot
 def page3():
+    st.write("Chat bot")
 
 # The name of the pages ( What the name will be on the app)
 page_names_to_funcs = {
